@@ -1,0 +1,41 @@
+var wms_layers = [];
+
+var format_uzb_admbnda_adm1_2018b_0 = new ol.format.GeoJSON();
+var features_uzb_admbnda_adm1_2018b_0 = format_uzb_admbnda_adm1_2018b_0.readFeatures(json_uzb_admbnda_adm1_2018b_0, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_uzb_admbnda_adm1_2018b_0 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_uzb_admbnda_adm1_2018b_0.addFeatures(features_uzb_admbnda_adm1_2018b_0);
+var lyr_uzb_admbnda_adm1_2018b_0 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_uzb_admbnda_adm1_2018b_0, 
+                style: style_uzb_admbnda_adm1_2018b_0,
+                popuplayertitle: 'uzb_admbnda_adm1_2018b',
+                interactive: true,
+    title: 'uzb_admbnda_adm1_2018b<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_0.png" /> Andijon<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_1.png" /> Buxoro<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_2.png" /> Farg\'ona<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_3.png" /> Jizzax<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_4.png" /> Namangan<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_5.png" /> Navoiy<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_6.png" /> Qashqadaryo<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_7.png" /> Qoraqalpog\'iston Respublikasi<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_8.png" /> Samarqand<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_9.png" /> Sirdaryo<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_10.png" /> Surxandaryo<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_11.png" /> Toshkent<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_12.png" /> Toshkent ш.<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_13.png" /> Xorazm<br />\
+    <img src="styles/legend/uzb_admbnda_adm1_2018b_0_14.png" /> <br />'
+        });
+
+lyr_uzb_admbnda_adm1_2018b_0.setVisible(true);
+var layersList = [lyr_uzb_admbnda_adm1_2018b_0];
+lyr_uzb_admbnda_adm1_2018b_0.set('fieldAliases', {'ADM0_EN': 'ADM0_EN', 'ADM0_RU': 'ADM0_RU', 'ADM0_UZ': 'ADM0_UZ', 'ADM0ALT1EN': 'ADM0ALT1EN', 'ADM0_PCODE': 'ADM0_PCODE', 'ADM1_EN': 'ADM1_EN', 'ADM1_RU': 'ADM1_RU', 'ADM1_UZ': 'ADM1_UZ', 'ADM1TYPE_E': 'ADM1TYPE_E', 'ADM1TYPE_R': 'ADM1TYPE_R', 'ADM1TYPE_U': 'ADM1TYPE_U', 'ADM1_PCODE': 'ADM1_PCODE', });
+lyr_uzb_admbnda_adm1_2018b_0.set('fieldImages', {'ADM0_EN': 'TextEdit', 'ADM0_RU': 'TextEdit', 'ADM0_UZ': 'TextEdit', 'ADM0ALT1EN': 'TextEdit', 'ADM0_PCODE': 'TextEdit', 'ADM1_EN': 'TextEdit', 'ADM1_RU': 'TextEdit', 'ADM1_UZ': 'TextEdit', 'ADM1TYPE_E': 'TextEdit', 'ADM1TYPE_R': 'TextEdit', 'ADM1TYPE_U': 'TextEdit', 'ADM1_PCODE': 'TextEdit', });
+lyr_uzb_admbnda_adm1_2018b_0.set('fieldLabels', {'ADM0_EN': 'no label', 'ADM0_RU': 'no label', 'ADM0_UZ': 'no label', 'ADM0ALT1EN': 'inline label - always visible', 'ADM0_PCODE': 'no label', 'ADM1_EN': 'no label', 'ADM1_RU': 'inline label - always visible', 'ADM1_UZ': 'no label', 'ADM1TYPE_E': 'no label', 'ADM1TYPE_R': 'no label', 'ADM1TYPE_U': 'no label', 'ADM1_PCODE': 'no label', });
+lyr_uzb_admbnda_adm1_2018b_0.on('precompose', function(evt) {
+    evt.context.globalCompositeOperation = 'normal';
+});
